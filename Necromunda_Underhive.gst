@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e0b2-fd9d-e110-5cee" name="Necromunda Underhive" revision="12" battleScribeVersion="2.01" authorName="Pinecones" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e0b2-fd9d-e110-5cee" name="Necromunda Gang War" revision="3" battleScribeVersion="2.01" authorName="Pinecones" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -84,6 +84,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="3a3c-5dd7-86cb-c162" name="Juve" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="35c5-5ad6-470e-59d8" name="Gang" hidden="false">
@@ -128,6 +135,13 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9efe-8c93-8fa1-99b0" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fb3-848a-674c-adc2" type="min"/>
           </constraints>
+        </categoryLink>
+        <categoryLink id="44aa-5593-8d71-9b52" name="Juve" hidden="false" targetId="3a3c-5dd7-86cb-c162" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -2520,9 +2534,7 @@ Synthesize Poison (Basic) – If the fighter is Engaged, make a Cool check. If t
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="If this fighter suffers a wound from a ranged or close combat attack, roll a D6. On a 6, the attack is dodged and has no effect; otherwise continue to make a save roll as normal.
-
-If the model dodges a weapon that uses a Blast marker or Flame template, a roll of 6 does not automatically cancel the attack – instead, it allows the fighter to move up to 2’’ before seeing whether they are hit. They cannot move within 1’’ of an enemy fighter."/>
+        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="If this fighter suffers a wound from a ranged or close combat attack, roll a D6. On a 6, the attack is dodged and has no effect; otherwise continue to make a save roll as normal.  If the model dodges a weapon that uses a Blast marker or Flame template, a roll of 6 does not automatically cancel the attack – instead, it allows the fighter to move up to 2’’ before seeing whether they are hit. They cannot move within 1’’ of an enemy fighter."/>
       </characteristics>
     </profile>
     <profile id="3707-4dd9-445f-c264" name="Gunfighter" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
